@@ -33,9 +33,11 @@ class HeoresPage extends StatelessWidget {
             child: Padding(
               padding: EdgeInsets.symmetric(
                 horizontal: 16.0,
-                vertical: 24.0,
+                vertical: kToolbarHeight/2,
               ),
-              child: Filters(),
+              child: SingleChildScrollView(
+                child: Filters(),
+              ),
             ),
           ),
           body: BlocBuilder<HeroesBloc, HeroesState>(
