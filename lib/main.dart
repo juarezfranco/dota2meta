@@ -17,6 +17,7 @@ class App extends StatelessWidget {
     return MaterialApp(
       title: 'Dota 2 Meta',
       theme: AppTheme.of(context).theme(),
+      debugShowCheckedModeBanner: false,
       localizationsDelegates: AppLocalizations.localizationsDelegates,
       supportedLocales: AppLocalizations.supportedLocales,
       home: const HeoresPage(),

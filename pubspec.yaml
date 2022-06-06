@@ -1,7 +1,7 @@
 name: dota2meta
 description: Dota 2 Meta.
 publish_to: 'none'
-version: 0.1.0+1
+version: 0.2.0+3
 
 environment:
   sdk: '>=2.18.0-141.0.dev <3.0.0'
@@ -21,6 +21,7 @@ dependencies:
   cached_network_image: ^3.2.1
   easy_debounce: ^2.0.2+1
   tasty_toast: ^1.0.0
+  skeletons: ^0.0.3
 
 dev_dependencies:
   flutter_test:

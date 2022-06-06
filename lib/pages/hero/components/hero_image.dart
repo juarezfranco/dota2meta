@@ -1,6 +1,7 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:dota2meta/models/hero.dart' as model_hero;
+import 'package:skeletons/skeletons.dart';
 
 class HeroImage extends StatelessWidget {
   final model_hero.Hero hero;
@@ -20,6 +21,7 @@ class HeroImage extends StatelessWidget {
           backgroundImage: imageProvider,
         ),
       ),
+      progressIndicatorBuilder: (context, url, progress) => const SkeletonAvatar(),
       errorWidget: (context, url, error) => const Icon(Icons.error),
     );
   }

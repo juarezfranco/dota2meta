@@ -1,5 +1,6 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
+import 'package:skeletons/skeletons.dart';
 
 class ImageWithShadow extends StatelessWidget {
   final String url;
@@ -29,8 +30,7 @@ class ImageWithShadow extends StatelessWidget {
       child: CachedNetworkImage(
         imageUrl: url,
         fit: BoxFit.cover,
-        progressIndicatorBuilder: (_, __, downloadProgress) =>
-            Center(child: CircularProgressIndicator(value: downloadProgress.progress)),
+        progressIndicatorBuilder: (context, url, progress) => const SkeletonAvatar(),
         errorWidget: (context, url, error) => const Icon(Icons.error),
         width: width,
         height: height,
