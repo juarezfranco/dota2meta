@@ -1,0 +1,23 @@
+{
+    "favoritesProfiles": "收藏夾個人資料",
+    "heroes": "英雄",
+    "hero": "英雄",
+    "retry": "再試一次",
+    "strength" : "力量",
+    "intelligence": "智力",
+    "agility": "敏捷",
+    "infoHeroesSection": "職業選手最近2000場比賽的統計數據，按pick+bans排序",
+    "win": "贏",
+    "pick": "挑選",
+    "ban": "禁止",
+    "attribute": "主要屬性",
+    "filter": "篩選",
+    "laneRole": "車道角色",
+    "resetFilter": "重置過濾器",
+    "items": "項目",
+    "startGame": "開始遊戲",
+    "earlyGame": "遊戲初期",
+    "midGame": "中期比賽",
+    "lateGame": "後期遊戲",
+    "noRecord": "沒有記錄"
+}

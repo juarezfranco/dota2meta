@@ -1,0 +1,23 @@
+{
+    "favoritesProfiles": "Profils favoris",
+    "heroes": "Héros",
+    "hero": "héros",
+    "retry": "Réessayer",
+    "strength" : "Force",
+    "intelligence": "Intelligence",
+    "agility": "Agilité",
+    "infoHeroesSection": "Statistiques des 2k matchs de joueurs professionnels, triés par sélections+interdictions",
+    "win": "Gagner",
+    "pick": "Prendre",
+    "ban": "Interdire",
+    "attribute": "Attribut principal",
+    "filter": "Filtre",
+    "laneRole": "Rôle de voie",
+    "resetFilter": "Réinitialiser le filtre",
+    "items": "Articles",
+    "startGame": "Démarrer jeu",
+    "earlyGame": "Début de partie",
+    "midGame": "Milieu de partie",
+    "lateGame": "Fin de partie",
+    "noRecord": "Aucun enregistrement"
+}
