@@ -1,0 +1,23 @@
+{
+    "favoritesProfiles": "Favorites Profiles",
+    "heroes": "Héroes",
+    "hero": "Héroe",
+    "retry": "Intentar nuevamente",
+    "strength" : "Fuerza",
+    "intelligence": "Inteligencia",
+    "agility": "Agilidad",
+    "infoHeroesSection": "Estadísticas de los últimos 2k juegos de jugadores pros, ordenados por picks+bans",
+    "win": "Victoria",
+    "pick": "Pick",
+    "ban": "Ban",
+    "attribute": "atributo principal",
+    "filter": "Filtrar",
+    "laneRole": "Lane",
+    "resetFilter": "Reiniciar filtro",
+    "items": "Items",
+    "startGame": "Start game",
+    "earlyGame": "Early game",
+    "midGame": "Mid game",
+    "lateGame": "Late game",
+    "noRecord": "Sin registro"
+}

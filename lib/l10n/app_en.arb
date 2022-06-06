@@ -1,0 +1,23 @@
+{
+    "favoritesProfiles": "Favorites profiles",
+    "heroes": "Heroes",
+    "hero": "Hero",
+    "retry": "Try again",
+    "strength" : "Strength",
+    "intelligence": "Intelligence",
+    "agility": "Agility",
+    "infoHeroesSection": "Statistics of the last 2k games of pro players, sorted by picks+bans",
+    "win": "Win",
+    "pick": "Pick",
+    "ban": "Ban",
+    "attribute": "Primary attribute",
+    "filter": "Filter",
+    "laneRole": "Lane role",
+    "resetFilter": "Reset filter",
+    "items": "Items",
+    "startGame": "Start game",
+    "earlyGame": "Early game",
+    "midGame": "Mid game",
+    "lateGame": "Late game",
+    "noRecord": "No record"
+}

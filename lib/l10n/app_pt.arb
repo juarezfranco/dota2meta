@@ -1,0 +1,23 @@
+{
+    "favoritesProfiles": "Perfis favoritos",
+    "heroes": "Heróis",
+    "hero": "Herói",
+    "retry": "Tentar novamente",
+    "strength" : "Força",
+    "intelligence": "Inteligência",
+    "agility": "Agilidade",
+    "infoHeroesSection": "Estatísticas dos últimos 2k jogos de jogadores prós, classificados por picks+bans",
+    "win": "Vitória",
+    "pick": "Pick",
+    "ban": "Ban",
+    "attribute": "Atributo primário",
+    "filter": "Filtro",
+    "laneRole": "Lane",
+    "resetFilter": "Reiniciar filtro",
+    "items": "Itens",
+    "startGame": "Começo de jogo",
+    "earlyGame": "Inicio de jogo (Early)",
+    "midGame": "Meio de jogo (Mid)",
+    "lateGame": "Fim de jogo (Late)",
+    "noRecord": "Nenhum registro"
+}

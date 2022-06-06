@@ -1,0 +1,51 @@
+name: dota2meta
+description: Dota 2 Meta.
+publish_to: 'none'
+version: 0.1.0+1
+
+environment:
+  sdk: '>=2.18.0-141.0.dev <3.0.0'
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  intl: ^0.17.0
+  cupertino_icons: ^1.0.2
+  line_icons: ^2.0.1
+  kiwi: ^4.0.2
+  dio: ^4.0.6
+  dio_cache_interceptor: ^3.2.7
+  flutter_bloc: ^8.0.1
+  bloc: ^8.0.3
+  cached_network_image: ^3.2.1
+  easy_debounce: ^2.0.2+1
+  tasty_toast: ^1.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+  http_mock_adapter: ^0.3.2
+  bloc_test: ^9.0.3
+  mocktail: ^0.3.0
+  flutter_launcher_icons: ^0.9.2
+
+flutter:
+  uses-material-design: true
+  generate: true
+  assets:
+    - assets/images/agility_attribute_symbol.png
+    - assets/images/intelligence_attribute_symbol.png
+    - assets/images/strength_attribute_symbol.png
+    - assets/icons/icon.png
+  fonts:
+    - family: Comfortaa
+      fonts:
+        - asset: assets/fonts/Comfortaa-Bold.ttf
+        - asset: assets/fonts/Comfortaa-Light.ttf
+        - asset: assets/fonts/Comfortaa-Medium.ttf
+        - asset: assets/fonts/Comfortaa-Regular.ttf
+        - asset: assets/fonts/Comfortaa-SemiBold.ttf
+        - asset: test/mock/heroes.json
+        - asset: test/mock/lanes_roles.json
