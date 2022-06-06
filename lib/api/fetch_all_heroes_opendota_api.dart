@@ -1,3 +1,4 @@
+import 'package:dota2meta/config.dart';
 import 'package:dota2meta/enums/attribute.dart';
 import 'package:dota2meta/models/hero.dart';
 import 'package:dota2meta/repositories/fetch_all_heroes_repository.dart';
@@ -13,7 +14,7 @@ class FetchHeroOpendotaApi extends FetchAllHeroesRepository {
   @override
   Future<List<Hero>> fetchAllHeroes() {
     return httpClient.get<List<Hero>>(
-      'https://api.opendota.com/api/heroStats',
+      '${Config.hostOpendotaApi}/api/heroStats',
       cache: const Duration(hours: 24),
       parse: (data) => (data as List).map<Hero>(
         (jsonItem) {

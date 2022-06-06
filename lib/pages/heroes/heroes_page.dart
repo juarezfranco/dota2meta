@@ -29,13 +29,14 @@ class HeoresPage extends StatelessWidget {
               HeroFilterButton(),
             ],
           ),
-          endDrawer: const Drawer(
+          endDrawer: Drawer(
             child: Padding(
               padding: EdgeInsets.symmetric(
                 horizontal: 16.0,
-                vertical: kToolbarHeight/2,
+                vertical:
+                    20 + MediaQuery.of(context).padding.top,
               ),
-              child: SingleChildScrollView(
+              child: const SingleChildScrollView(
                 child: Filters(),
               ),
             ),

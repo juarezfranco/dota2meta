@@ -75,18 +75,22 @@ class ItemsByGamePhase extends StatelessWidget {
       builder: (context, state) {
         return Container(
           margin: const EdgeInsets.only(
-            top: 8,
+            top: 4,
           ),
           child: Card(
             child: Padding(
               padding: const EdgeInsets.all(8.0),
               child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                mainAxisAlignment: MainAxisAlignment.start,
+                mainAxisSize: MainAxisSize.min,
                 children: [
                   Text(title),
-                  const Divider(),
+                  Divider(),
                   if (state.itemsByGamePhase[gamePhase]?.isEmpty ?? false)
                     Center(
-                      child: Text(locale.noRecord,
+                      child: Text(
+                        locale.noRecord,
                         style: Theme.of(context).textTheme.caption,
                       ),
                     ),
@@ -95,8 +99,9 @@ class ItemsByGamePhase extends StatelessWidget {
                       primary: false,
                       shrinkWrap: true,
                       crossAxisCount: 9,
-                      mainAxisSpacing: 4,
-                      crossAxisSpacing: 4,
+                      mainAxisSpacing: 8,
+                      crossAxisSpacing: 8,
+                      padding: EdgeInsets.zero,
                       children: state.itemsByGamePhase[gamePhase]!
                           .map<Widget>(
                             (item) => ItemImage(item),

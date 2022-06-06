@@ -1,3 +1,4 @@
+import 'package:dota2meta/config.dart';
 import 'package:dota2meta/models/item.dart';
 import 'package:dota2meta/repositories/fetch_all_items_repository.dart';
 import 'package:dota2meta/support/app_http_client.dart';
@@ -10,7 +11,7 @@ class FetchAllItemsOpendotaApi extends FetchAllItemsRepository {
   @override
   Future<List<Item>> fetchAllItems() {
     return httpClient.get<List<Item>>(
-      'https://api.opendota.com/api/constants/items',
+      '${Config.hostOpendotaApi}/api/constants/items',
       cache: const Duration(hours: 24),
       parse: (data) {
         final List<Item> items = [];

@@ -1,3 +1,4 @@
+import 'package:dota2meta/config.dart';
 import 'package:dota2meta/enums/game_phase.dart';
 import 'package:dota2meta/models/hero.dart';
 import 'package:dota2meta/models/item.dart';
@@ -19,7 +20,7 @@ class FetchMetaItemsForHeroOpendotaApi extends FetchMetaItemsForHeroRepository {
     final items = await fetchAllItemsRepository.fetchAllItems();
 
     return await httpClient.get<Map<GamePhase, List<Item>>>(
-      'https://api.opendota.com/api//heroes/${hero.id}/itemPopularity',
+      '${Config.hostOpendotaApi}/api//heroes/${hero.id}/itemPopularity',
       cache: const Duration(hours: 24),
       parse: (data) => {
         GamePhase.start: (data["start_game_items"] as Map)
