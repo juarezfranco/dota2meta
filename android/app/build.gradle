@@ -71,6 +71,9 @@ android {
     buildTypes {
         release {
             signingConfig signingConfigs.release
+            ndk {
+                debugSymbolLevel 'FULL'
+            }
         }
     }
 }
@@ -83,4 +86,3 @@ dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
     implementation "com.google.android.material:material:1.7.0-alpha02"
 }
-
