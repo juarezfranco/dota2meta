@@ -11,5 +11,9 @@ This always changes over time, and is driven by community opinion, professional 
 - English
 - Spanish
 - Portuguese
+- French
+- Russian
+- Ukrainian
+- Chinese
 
 Made with ❤ in Brazil
