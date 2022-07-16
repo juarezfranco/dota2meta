@@ -1,5 +1,5 @@
 class LaneRole {
-  late final int heroId;
+  late final int? heroId;
   late final int games;
   late final int laneRole;
 

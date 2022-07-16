@@ -168,6 +168,11 @@ class HeroesBloc extends Bloc<HeroesEvent, HeroesState> {
         status: HeroesStatus.failure,
         errorMessage: e.message,
       ));
+    } catch (e) {
+      print(e);
+      emit(state.copyWith(
+        status: HeroesStatus.failure,
+      ));
     }
   }
 }
