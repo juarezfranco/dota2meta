@@ -3,6 +3,8 @@
 The Dota 2 Meta show the current trend that is often considered to be the optimal way to play the game by the community. 
 This always changes over time, and is driven by community opinion, professional players, and balance patches.
 
+<img src="assets/demo.jpeg" height="500">
+
 ## Changelog
 
 [Link](CHANGELOG.md)
