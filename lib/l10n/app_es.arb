@@ -6,6 +6,7 @@
     "strength" : "Fuerza",
     "intelligence": "Inteligencia",
     "agility": "Agilidad",
+    "universal": "Universal",
     "infoHeroesSection": "Estadísticas de los últimos 2k juegos de jugadores pros, ordenados por picks+bans",
     "win": "Victoria",
     "pick": "Pick",

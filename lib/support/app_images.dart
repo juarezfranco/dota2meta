@@ -10,6 +10,10 @@ class AppImages {
       return "assets/images/agility_attribute_symbol.png";
     }
 
-    return "assets/images/intelligence_attribute_symbol.png";
+    if (attribute == Attribute.intelligence) {
+      return "assets/images/intelligence_attribute_symbol.png";
+    }
+
+    return "assets/images/universal_attribute_symbol.png";
   }
 }

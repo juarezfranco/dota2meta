@@ -6,6 +6,7 @@
     "strength" : "Force",
     "intelligence": "Intelligence",
     "agility": "Agilité",
+    "universal": "Universal",
     "infoHeroesSection": "Statistiques des 2k matchs de joueurs professionnels, triés par sélections+interdictions",
     "win": "Gagner",
     "pick": "Prendre",

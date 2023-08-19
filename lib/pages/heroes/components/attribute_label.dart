@@ -21,9 +21,14 @@ class AttributeLabel extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        Image.asset(
-          AppImages.getAttributePath(attribute),
-          height: iconSize,
+        SizedBox(
+          height: 18,
+          width: 18,
+          child: Image.asset(
+            AppImages.getAttributePath(attribute),
+            height: iconSize,
+            width: iconSize,
+          ),
         ),
         const SizedBox(width: 2),
         Text(
@@ -45,6 +50,14 @@ class AttributeLabel extends StatelessWidget {
       return AppLocalizations.of(context).agility;
     }
 
-    return AppLocalizations.of(context).intelligence;
+    if (attribute == Attribute.intelligence) {
+      return AppLocalizations
+          .of(context)
+          .intelligence;
+    }
+
+    return AppLocalizations
+        .of(context)
+        .universal;
   }
 }

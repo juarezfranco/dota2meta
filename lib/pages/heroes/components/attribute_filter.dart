@@ -23,6 +23,7 @@ class AttributeFilter extends StatelessWidget {
             AttributeRadioFilter(Attribute.strength),
             AttributeRadioFilter(Attribute.agility),
             AttributeRadioFilter(Attribute.intelligence),
+            AttributeRadioFilter(Attribute.universal),
           ],
         ),
       ],

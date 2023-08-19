@@ -6,6 +6,7 @@
     "strength" : "Strength",
     "intelligence": "Intelligence",
     "agility": "Agility",
+    "universal": "Universal",
     "infoHeroesSection": "Statistics of the last 2k games of pro players, sorted by picks+bans",
     "win": "Win",
     "pick": "Pick",

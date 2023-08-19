@@ -35,6 +35,7 @@ class FetchHeroOpendotaApi extends FetchAllHeroesRepository {
               "agi": Attribute.agility,
               "str": Attribute.strength,
               "int": Attribute.intelligence,
+              "all": Attribute.universal,
             }[jsonItem['primary_attr']]!,
             attackType: jsonItem['attack_type'],
             roles: jsonItem['roles'].cast<String>(),

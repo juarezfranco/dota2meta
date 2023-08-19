@@ -1,7 +1,7 @@
 name: dota2meta
 description: Dota 2 Meta.
 publish_to: 'none'
-version: 1.0.3+8
+version: 1.1.0+9
 
 environment:
   sdk: '>=2.18.0-141.0.dev <3.0.0'
@@ -39,6 +39,7 @@ flutter:
     - assets/images/agility_attribute_symbol.png
     - assets/images/intelligence_attribute_symbol.png
     - assets/images/strength_attribute_symbol.png
+    - assets/images/universal_attribute_symbol.png
     - assets/icons/icon.png
   fonts:
     - family: Comfortaa
