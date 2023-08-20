@@ -22,6 +22,7 @@ dependencies:
   easy_debounce: ^2.0.2+1
   tasty_toast: ^1.0.0
   skeletons: ^0.0.3
+  google_mobile_ads: ^3.0.0
 
 dev_dependencies:
   flutter_test:
