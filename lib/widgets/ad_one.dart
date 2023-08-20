@@ -1,9 +1,17 @@
+import 'dart:io';
+
 import 'package:dota2meta/constants.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 
 class AdOne extends StatefulWidget {
-  const AdOne({Key? key}) : super(key: key);
+  final double height;
+
+  const AdOne({
+    super.key,
+    this.height = 80,
+  });
 
   @override
   State<AdOne> createState() => _AdOneState();
@@ -13,24 +21,12 @@ class _AdOneState extends State<AdOne> {
   NativeAd? _nativeAd;
   bool _nativeAdIsLoaded = false;
 
-  void loadAd() {
-    _nativeAd = NativeAd(
-      adUnitId: Constants.admobId1,
-      listener: NativeAdListener(
-        onAdLoaded: (ad) {
-          debugPrint('$NativeAd loaded.');
-          setState(() {
-            _nativeAdIsLoaded = true;
-          });
-        },
-        onAdFailedToLoad: (ad, error) {
-          // Dispose the ad here to free resources.
-          debugPrint('$NativeAd failed to load: $error');
-          ad.dispose();
-        },
-      ),
-      request: const AdRequest(),
-    );
+  @override
+  void initState() {
+    super.initState();
+    if (Platform.isAndroid) {
+      _loadAd();
+    }
   }
 
   @override
@@ -39,13 +35,41 @@ class _AdOneState extends State<AdOne> {
     super.dispose();
   }
 
+  void _loadAd() {
+    _nativeAd = NativeAd(
+      adUnitId: Constants.admobId1,
+      nativeTemplateStyle: NativeTemplateStyle(
+        templateType: TemplateType.small,
+      ),
+      listener: NativeAdListener(
+        onAdLoaded: (ad) {
+          if (kDebugMode) {
+            print('$NativeAd loaded.');
+          }
+          setState(() {
+            _nativeAdIsLoaded = true;
+          });
+        },
+        onAdFailedToLoad: (ad, error) {
+          if (kDebugMode) {
+            print('$NativeAd failed to load: $error');
+          }
+          ad.dispose();
+        },
+      ),
+      request: const AdRequest(),
+    )..load();
+  }
+
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: _nativeAdIsLoaded ? 100 : null,
-      child: _nativeAdIsLoaded ?  AdWidget(
-        ad: _nativeAd!,
-      ) : null,
+      height: _nativeAdIsLoaded ? widget.height : null,
+      child: _nativeAdIsLoaded
+          ? AdWidget(
+              ad: _nativeAd!,
+            )
+          : null,
     );
   }
 }
