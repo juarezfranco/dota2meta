@@ -20,5 +20,7 @@
     "earlyGame": "遊戲初期",
     "midGame": "中期比賽",
     "lateGame": "後期遊戲",
-    "noRecord": "沒有記錄"
+    "noRecord": "沒有記錄",
+    "about": "关于",
+    "projectDescription": "Dota 2 的元游戏展示了当前趋势，通常被社区认为是玩游戏的最佳方式。这种趋势会随时间不断变化，并受到社区意见、职业玩家和平衡补丁的影响。"
 }

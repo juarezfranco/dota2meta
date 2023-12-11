@@ -20,5 +20,7 @@
     "earlyGame": "Inicio de jogo (Early)",
     "midGame": "Meio de jogo (Mid)",
     "lateGame": "Fim de jogo (Late)",
-    "noRecord": "Nenhum registro"
+    "noRecord": "Nenhum registro",
+    "about": "Sobre",
+    "projectDescription": "O meta do Dota 2 mostra a tendência atual que é frequentemente considerada a forma ideal de jogar o jogo pela comunidade. Isso sempre muda ao longo do tempo e é impulsionado pela opinião da comunidade, jogadores profissionais e patches de balanceamento."
 }
