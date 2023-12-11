@@ -8,7 +8,7 @@ class PercentPickBanWin extends StatelessWidget {
     required this.percent,
     required this.total,
     super.key,
-  }) : assert(percent <= 100);
+  });
 
   @override
   Widget build(BuildContext context) {

@@ -6,10 +6,8 @@ import 'package:dota2meta/pages/heroes/components/info_section.dart';
 import 'package:dota2meta/repositories/fetch_all_heroes_repository.dart';
 import 'package:dota2meta/repositories/fetch_meta_lanes_roles_repository.dart';
 import 'package:dota2meta/support/app_container.dart';
-import 'package:dota2meta/widgets/ad_one.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:google_mobile_ads/google_mobile_ads.dart';
 
 class HeoresPage extends StatelessWidget {
   const HeoresPage({super.key});
@@ -43,19 +41,7 @@ class HeoresPage extends StatelessWidget {
               ),
             ),
           ),
-          body: BlocBuilder<HeroesBloc, HeroesState>(
-            builder: (context, state) {
-              return Column(
-                children: const [
-                  InfoSection(),
-                  Expanded(
-                    child: HeroesList(),
-                  ),
-                  AdOne(),
-                ],
-              );
-            },
-          ),
+          body: const HeroesList(),
         ),
       ),
     );

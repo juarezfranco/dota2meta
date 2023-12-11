@@ -23,17 +23,6 @@ class HeroesList extends StatelessWidget {
               final bloc = BlocProvider.of<HeroesBloc>(context);
               List<Widget> children = [];
 
-              if (state.status == HeroesStatus.loading) {
-                children.add(
-                  const Center(
-                    child: Padding(
-                      padding: EdgeInsets.all(8.0),
-                      child: CircularProgressIndicator(),
-                    ),
-                  ),
-                );
-              }
-
               if (state.status == HeroesStatus.failure) {
                 children.add(
                   ErrorWithRetry(
@@ -43,8 +32,7 @@ class HeroesList extends StatelessWidget {
                 );
               }
 
-              if (state.status == HeroesStatus.success ||
-                  state.heroes.length > 1) {
+              if (state.status == HeroesStatus.success || state.heroes.length > 1) {
                 children.add(
                   Expanded(
                     child: ListView.builder(
@@ -65,8 +53,19 @@ class HeroesList extends StatelessWidget {
                 );
               }
 
-              return Column(
-                children: children,
+              return Stack(
+                children: [
+                  Column(
+                    children: children,
+                  ),
+                  if (state.status == HeroesStatus.loading)
+                    const Center(
+                      child: Padding(
+                        padding: EdgeInsets.all(8.0),
+                        child: CircularProgressIndicator(),
+                      ),
+                    ),
+                ],
               );
             },
           ),
